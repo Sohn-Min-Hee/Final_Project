@@ -1,0 +1,151 @@
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-point: #F2B42B;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+html{font-family: Pretendard; background-color: var(--color-black);}
+body,img{margin: 0;}
+img{width: 100%}
+header{background-color: var(--color-black);}
+.black{background-color: var(--color-black); color: var(--color-black); position: relative;}
+.header{background-color: var(--color-black); position:relative; padding-top:50rem }
+.img4{width: 50rem; position: absolute; left: 23rem; bottom: 10rem;}
+.text1{animation: move3 2s forwards; animation-delay:0.2s;font-weight: 900;position: absolute; bottom: 25rem; left: 20rem; color: var(--color-black);z-index: 1;font-size: 3rem;}
+.text2{animation: move3 2s forwards; animation-delay:0.2s;font-weight: 900;position: absolute;bottom: 10rem;left: 40rem; color: var(--color-black);z-index: 1;font-size: 5rem}
+.img1{margin-top: 5rem}
+.box img { /* hover 뒤 애니메이션 */
+    transform: scale(1.0); /* 이미지 확대 */
+    transition: transform .5s; /* 시간 설정 */
+}
+ 
+.box img:hover {    /* hover 시 애니메이션 */
+    transform: scale(1.2);   /* 이미지 확대 */
+    transition: transform .5s;  /* 시간 설정 */
+}
+
+
+
+li{list-style-type:none;}
+a{font-weight: 900;display: block;text-decoration: 0; line-height: 40px;padding: 0px 14px;border-radius: 5px;color: var(--color-black); font-size: 1.5rem; }
+li,ul{margin: 0;padding: 0}
+.menu{width:400px;display: flex; }
+.wrap_nav{background-color: var(--color-point); padding:1vw 2vw; }
+a:hover{transition: all 0.5s;background: var(--color-black); color:var(--color-point);}
+iframe{width: 720px; height: 410px; margin-left: 25rem;}
+
+.ticker{position: absolute; overflow: hidden;}
+#ticker2{font-size: 1.5rem;color: var(--color-point); height: 1.5rem;width: 100%;}
+#ticker3{font-size: 3rem;color: var(--color-point); height: 3rem;width: 100%;}
+.line{margin-top: 1.7rem}
+.line3{margin-top: 3.2rem}
+.text{width: 50%; margin: 15rem 0rem 0rem 8rem}
+.flex{display: flex; flex-wrap: wrap; margin:  2rem 8rem 0rem 8rem}
+.column-3{width: 17%; padding: 1rem}
+.flex1{display:block;width: 100%; height: auto}
+.text3{color: var(--color-white); font-size: 1.5rem;font-weight: 800; margin:2rem 8rem 0rem 8rem;line-height: 2.3rem}
+.fly {animation: move1 1s infinite linear;animation-direction: alternate;}
+
+@keyframes move1{
+      from{ transform:scale(1.0); }
+      to{transform:scale(1.1); }
+    }
+
+.right{animation: rr 2s forwards; animation-delay:1.5s;width: 85%; margin: 20rem 0rem 0rem 8rem}
+@keyframes rr{
+      from{left: 60rem;opacity: 0}
+      to{left: 62rem;opacity: 1}
+    }
+    @keyframes rrr{
+      from{left: 72rem;opacity: 0}
+      to{left: 70rem;opacity: 1}
+    }
+
+.column-4{width: 14%; padding: 1rem;margin-top: 15rem}
+.fat {animation: move2 1s infinite linear;animation-direction: alternate;}
+
+@keyframes move2{
+      from{opacity: 100}
+      to{opacity:0 }
+    }
+@keyframes move3{
+      from{opacity: 0}
+      to{opacity:100 }
+    }
+.bmi{width: 80% ;margin: 2rem 9rem 0rem 9rem}
+.how{width:100%; margin: 15rem 0rem 0rem 0rem}
+.wrap4{position: relative;}
+.text4{animation: move3 2s forwards; animation-delay:1s;font-weight: 900;position: absolute; bottom: 20rem; left: 28rem; color: var(--color-black);z-index: 0;font-size: 3rem;text-align: center;}
+
+.newspaper1{position: relative;}
+.news1{width: 80%; margin: 15rem 9rem 0rem 9rem}
+
+.talk1{animation: rr 2s forwards; animation-delay:1s;position: absolute;width: 15%;left: 62rem; top: 63.5rem}
+.talk2{animation:rr 2s forwards; animation-delay:1.5s;position: absolute;width: 15%; left: 62rem; top: 69rem}
+.talk3{animation: rr 2s forwards; animation-delay:2s;position: absolute;width: 15%; left: 62rem; top: 72rem}
+.talk4{animation: rr 2s forwards; animation-delay:2.5s;position: absolute;width: 15%; left: 62rem; top: 75rem}
+.talk5{animation: rrr 2s forwards; animation-delay:3s;position: absolute;width: 15%; left: 70rem; top: 79rem}
+.talk6{animation: rrr 2s forwards; animation-delay:3.5s;position: absolute;width: 15%; left: 70rem; top: 82rem}
+.talk7{animation: rr 2s forwards; animation-delay:4s;position: absolute;width: 15%; left: 62rem; top: 86rem}
+.talk8{animation: rr 2s forwards; animation-delay:4.5s;position: absolute;width: 15%; left: 62rem; top: 89rem}
+.talk9{animation: rr 2s forwards; animation-delay:5s;position: absolute;width: 15%; left: 62rem; top: 92rem}
+.qr1{animation: qr 1s infinite linear;animation-direction: alternate; position: absolute; width: 10%;top: 15rem; right:10rem;}
+.qr2{animation: qr 1s infinite linear;animation-direction: alternate; position: absolute; width: 10%;top: 18rem; right:7rem;}
+.qr3{animation: qr 1s infinite linear;animation-direction: alternate; position: absolute; width: 7%;top:48rem; right:55rem;}
+.qr4{animation: qr 1s infinite linear;animation-direction: alternate; position: absolute; width: 7%;top:48rem; right:10rem;}
+
+@keyframes qr{
+      from{scale: 1}
+      to{scale:1.1 }
+    }
+
+.wrap_qr img { /* hover 뒤 애니메이션 */
+    transform: scale(1.0); /* 이미지 확대 */
+    transition: transform .5s; /* 시간 설정 */
+}
+ 
+.wrap_qr img:hover {    /* hover 시 애니메이션 */
+    transform: scale(1.2);   /* 이미지 확대 */
+    transition: transform .5s;  /* 시간 설정 */
+}
+.imgF{margin-top: 10rem}
+.textt h2{color: var(--color-white); font-size: 2rem;font-weight: 900; margin:10rem 8rem 0rem 8rem;line-height: 2.3rem}
+.foot{background-color: var(--color-point); padding-top: 5rem;margin-top: 25rem}
+.foot p{font-size: 1rem;font-weight: 900; margin:0rem 0rem 0rem 0rem;padding: 0rem 0rem 0rem 0rem;line-height: 2.3rem;text-align: center;}
+.foot h2{font-size: 1.5rem;font-weight: 900; margin:2rem 0rem 0rem 0rem;padding: 2rem 0rem 2rem 0rem;line-height: 2.3rem;text-align: center;}
+.img_a{width: 100%;display: block; margin:10rem auto 0rem;}
+.img_b{width: 60%;display: block; margin:2rem 0rem 0rem 25rem;}
+.img_c{width: 40%;display: block; margin: 10rem auto 0rem;}
+.img_d{width: 60%;display: block; margin: 10rem 0rem 0rem 15rem;}
+.img_e{width: 50%;display: block; margin: 10rem auto 0rem;}
+.img_f{width: 50%;display: block; margin: 10rem auto 0rem;}
+.img_g{width: 100%;display: block; margin: 30rem auto 0rem;}
+.img_h{width: 50%;display: block; margin: 2rem auto 0rem;}
+.img_i{width: 60%;display: block; margin: 10rem 0rem 0rem 15rem;}
+.img_j{width: 50%;display: block; margin: 10rem auto 0rem;}
+.img_k{width: 100%;display: block; margin: 30rem auto 0rem;}
+.img_l{width: 40%;display: block; margin: 2rem auto 0rem;}
+.img_m{width: 60%;display: block; margin: 10rem 0rem 0rem 25rem;}
